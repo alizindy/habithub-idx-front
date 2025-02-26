@@ -1,0 +1,86 @@
+diff --git a/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.js b/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.js
+index f8619b8..efc896a 100644
+--- a/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.js
++++ b/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.js
+@@ -406,10 +406,10 @@ var AptosConnectGoogleWallet = class extends AptosConnectWallet {
+         signAndSubmitTransaction: this.signAndSubmitTransaction.bind(this),
+         version: "1.1.0"
+       },
+-      [import_wallet_standard4.AptosSignInNamespace]: {
+-        signIn: this.signIn.bind(this),
+-        version: "0.1.0"
+-      },
++      // [import_wallet_standard4.AptosSignInNamespace]: {
++      //   signIn: this.signIn.bind(this),
++      //   version: "0.1.0"
++      // },
+       [import_wallet_standard4.AptosSignMessageNamespace]: {
+         signMessage: this.signMessage.bind(this),
+         version: "1.0.0"
+@@ -463,10 +463,10 @@ var AptosConnectAppleWallet = class extends AptosConnectWallet {
+         signAndSubmitTransaction: this.signAndSubmitTransaction.bind(this),
+         version: "1.1.0"
+       },
+-      [import_wallet_standard5.AptosSignInNamespace]: {
+-        signIn: this.signIn.bind(this),
+-        version: "0.1.0"
+-      },
++      // [import_wallet_standard5.AptosSignInNamespace]: {
++      //   signIn: this.signIn.bind(this),
++      //   version: "0.1.0"
++      // },
+       [import_wallet_standard5.AptosSignMessageNamespace]: {
+         signMessage: this.signMessage.bind(this),
+         version: "1.0.0"
+diff --git a/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.mjs b/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.mjs
+index f61adcb..81798ad 100644
+--- a/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.mjs
++++ b/node_modules/@aptos-connect/wallet-adapter-plugin/dist/index.mjs
+@@ -29,7 +29,7 @@ import {
+   AptosOnAccountChangeNamespace,
+   AptosOnNetworkChangeNamespace,
+   AptosSignAndSubmitTransactionNamespace,
+-  AptosSignInNamespace,
++  // AptosSignInNamespace,
+   AptosSignMessageNamespace,
+   AptosSignTransactionNamespace
+ } from "@aptos-labs/wallet-standard";
+@@ -411,10 +411,10 @@ var AptosConnectGoogleWallet = class extends AptosConnectWallet {
+         signAndSubmitTransaction: this.signAndSubmitTransaction.bind(this),
+         version: "1.1.0"
+       },
+-      [AptosSignInNamespace]: {
+-        signIn: this.signIn.bind(this),
+-        version: "0.1.0"
+-      },
++      // [AptosSignInNamespace]: {
++      //   signIn: this.signIn.bind(this),
++      //   version: "0.1.0"
++      // },
+       [AptosSignMessageNamespace]: {
+         signMessage: this.signMessage.bind(this),
+         version: "1.0.0"
+@@ -437,7 +437,7 @@ import {
+   AptosOnAccountChangeNamespace as AptosOnAccountChangeNamespace2,
+   AptosOnNetworkChangeNamespace as AptosOnNetworkChangeNamespace2,
+   AptosSignAndSubmitTransactionNamespace as AptosSignAndSubmitTransactionNamespace2,
+-  AptosSignInNamespace as AptosSignInNamespace2,
++  // AptosSignInNamespace as AptosSignInNamespace2,
+   AptosSignMessageNamespace as AptosSignMessageNamespace2,
+   AptosSignTransactionNamespace as AptosSignTransactionNamespace2
+ } from "@aptos-labs/wallet-standard";
+@@ -479,10 +479,10 @@ var AptosConnectAppleWallet = class extends AptosConnectWallet {
+         signAndSubmitTransaction: this.signAndSubmitTransaction.bind(this),
+         version: "1.1.0"
+       },
+-      [AptosSignInNamespace2]: {
+-        signIn: this.signIn.bind(this),
+-        version: "0.1.0"
+-      },
++      // [AptosSignInNamespace2]: {
++      //   signIn: this.signIn.bind(this),
++      //   version: "0.1.0"
++      // },
+       [AptosSignMessageNamespace2]: {
+         signMessage: this.signMessage.bind(this),
+         version: "1.0.0"

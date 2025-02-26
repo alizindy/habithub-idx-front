@@ -1,0 +1,13 @@
+# For documentation on how to configure this file,
+# see https://diesel.rs/guides/configuring-diesel-cli
+[database]
+url = "postgresql://neondb_owner:npg_ZjMXigLN27TW@ep-icy-recipe-a1lojbw3-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+
+[migrations]
+directory = "src/db_migrations/migrations"
+
+[print_schema]
+file = "schema.rs"
+
+[migrations_directory]
+dir = "migrations"
